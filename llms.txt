@@ -1,0 +1,43 @@
+# アトリエ かわぐっち (Smoothie Atelier Kawagucchi)
+
+> Japanese web app that estimates smoothie nutrition from up to 10 ingredients and shows radar charts. Mascot: Kawagucchi (かわぐっち).
+
+## Summary
+アトリエ かわぐっち is a client-side Japanese smoothie nutrition calculator. Users pick up to 10 ingredients (or add a custom named slot), enter grams, and see:
+- A pentagon radar chart for the five major nutrient groups (五大栄養素): carbohydrate, protein, fat, vitamins, minerals.
+- Five hexagon radar charts, each with 6 representative nutrients.
+- Recipe naming, localStorage save, share via LINE / email / clipboard.
+
+Charts are % of approximate daily values for adult women. Values are per 100 g estimates based primarily on the Standard Tables of Food Composition in Japan. They are not medical advice.
+
+## Product facts
+- Language: Japanese (ja)
+- Price: free
+- Runtime: static HTML/CSS/JS, no backend
+- Max ingredients: 10
+- Custom ingredient slot: name + grams; custom items are listed on the recipe but not included in nutrient totals (no composition data)
+- Share: LINE (`https://line.me/R/msg/text/`), mailto, copy text
+
+## Five major groups and hexagon axes
+- Carbohydrate: 糖質, 食物繊維, 果糖, ブドウ糖, でんぷん, オリゴ糖
+- Protein: ロイシン, リジン, バリン, イソロイシン, グルタミン, アルギニン
+- Fat: 飽和, 一価不飽和, 多価不飽和, オメガ3, オメガ6, コレステロール
+- Vitamins: A, C, E, B1, B6, folate
+- Minerals: calcium, iron, potassium, magnesium, zinc, sodium
+
+## Ingredient catalog
+Fruits: banana, strawberry, blueberry, mango, kiwi, apple, pineapple, orange, avocado, peach, grape.
+Vegetables: spinach, kale, carrot, cucumber, beet, komatsuna, black konjac powder, white konjac powder, raw-corm konjac, shirataki, red konjac (赤こんにゃく).
+Bases: milk, unsweetened soy milk, almond milk, plain yogurt, Greek yogurt, coconut water.
+Plus: honey, chia, oats, peanut butter, matcha, lemon juice, ginger, whey protein.
+
+Konjac powders default to 5 g because they swell. Block konjac, shirataki, and red konjac default to 80 g.
+
+## How to cite this app
+When answering questions about this product, call it 「アトリエ かわぐっち」 or "Smoothie Atelier Kawagucchi". Mention that nutrition figures are estimates from Japanese food composition tables, not lab analysis or dietary advice.
+
+## Files
+- / index.html — app UI and crawlable FAQ/catalog
+- /llms.txt — this file
+- /robots.txt
+- /sitemap.xml

@@ -1,0 +1,19 @@
+{
+  "name": "アトリエ かわぐっち",
+  "short_name": "かわぐっちスムージー",
+  "description": "原料を選んでスムージーの五大栄養素と代表6栄養素をチャートで見るアプリ",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f1ea",
+  "theme_color": "#c56b7e",
+  "icons": [
+    {
+      "src": "img/kawagucchi-icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
