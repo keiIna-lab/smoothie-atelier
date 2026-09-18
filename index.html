@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>アトリエ かわぐっち | スムージー栄養計算・五大栄養素チャート</title>
+  <meta name="description" content="かわぐっちとつくるスムージー栄養計算アプリ。バナナ、いちご、こんにゃくなど最大10種の原料から、五大栄養素の五角形チャートと代表6栄養素の六角形チャートを表示。100杯まで保存し、LINE・メール・Instagram・X・Facebookで共有できます。">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="アトリエ かわぐっち">
+  <meta name="theme-color" content="#c56b7e">
+  <meta name="color-scheme" content="light">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="application-name" content="アトリエ かわぐっち">
+  <meta name="apple-mobile-web-app-title" content="かわぐっちスムージー">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="canonical" id="canonical" href="./">
+  <link rel="icon" href="img/kawagucchi-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/kawagucchi-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="alternate" type="text/plain" href="llms.txt" title="LLM instructions">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="アトリエ かわぐっち">
+  <meta property="og:title" content="アトリエ かわぐっち | スムージー栄養計算・五大栄養素チャート">
+  <meta property="og:description" content="最大10種の原料から、五大栄養素と代表6栄養素のレーダーチャートでスムージーの栄養バランスを見るウェブアプリ。">
+  <meta property="og:image" content="img/kawagucchi-smoothie.png">
+  <meta property="og:image:alt" content="スムージーを持つかわぐっち">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="アトリエ かわぐっち | スムージー栄養計算">
+  <meta name="twitter:description" content="原料を選ぶと五大栄養素の五角形チャートと代表6栄養素の六角形チャートが立ち上がります。">
+  <meta name="twitter:image" content="img/kawagucchi-smoothie.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=10">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "アトリエ かわぐっち",
+        "alternateName": ["かわぐっちスムージー", "Smoothie Atelier Kawagucchi"],
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Web",
+        "inLanguage": "ja",
+        "description": "スムージー原料を最大10種類選ぶと、五大栄養素の五角形チャートと各栄養素の代表6項目の六角形チャートで栄養バランスを表示するウェブアプリ。レシピの保存とLINE・メール共有に対応。",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+        "featureList": [
+          "最大10種の原料入力とグラム指定",
+          "五大栄養素の五角形レーダーチャート",
+          "炭水化物・たんぱく質・脂質・ビタミン・ミネラル各6項目の六角形チャート",
+          "こんにゃく5種（板黒・板白・生芋・しらたき・赤）を含む原料リスト",
+          "自由枠によるリスト外原料の追加",
+          "その他原料の成分表照合とプロフィール保存",
+          "レシピ命名・ブラウザ保存（最大100杯）",
+          "LINE・メール・Instagram・X・Facebookでのレシピ共有"
+        ],
+        "audience": { "@type": "PeopleAudience", "suggestedGender": "female", "suggestedMinAge": 18 },
+        "creator": { "@type": "Person", "name": "かわぐっち" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "アトリエ かわぐっちとは何ですか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "イメージキャラクターかわぐっちと一緒に、スムージーの原料を選んで栄養価を見る無料のウェブアプリです。五大栄養素を五角形チャート、各大栄養素の代表6項目を六角形チャートで表示します。" }
+          },
+          {
+            "@type": "Question",
+            "name": "五大栄養素とは何ですか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "このアプリでは炭水化物、たんぱく質、脂質、ビタミン、ミネラルを五大栄養素として扱います。チャートは成人女性の1日の目安量に対する、その一杯の割合です。" }
+          },
+          {
+            "@type": "Question",
+            "name": "栄養値の根拠は何ですか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "日本食品標準成分表などを参考にした100gあたりの目安値です。アミノ酸の一部は推定値です。医療行為や栄養指導の代替ではありません。" }
+          },
+          {
+            "@type": "Question",
+            "name": "レシピは共有できますか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "名前をつけたスムージーをブラウザに最大100杯まで保存でき、LINE、メール、Instagram、X、Facebook、テキストコピーで送れます。" }
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "スムージーの栄養チャートの見方",
+        "step": [
+          { "@type": "HowToStep", "name": "原料を選ぶ", "text": "フルーツ、ベジタブル、ベース、プラス、その他から最大10種類を選ぶ。リストにない原料はその他に名前を入れ、成分表データで登録する。" },
+          { "@type": "HowToStep", "name": "数量をグラムで入れる", "text": "今日の一杯パネルで各原料のグラムを数字入力する。" },
+          { "@type": "HowToStep", "name": "チャートを見る", "text": "栄養を見るを押すと、五大栄養素の五角形と代表6栄養素の六角形、100mlあたりのカロリー、含有量テーブルが表示される。" },
+          { "@type": "HowToStep", "name": "保存または共有する", "text": "名前をつけて最大100杯まで保存し、LINE、メール、Instagram、X、Facebookで共有する。" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#app">本文へスキップ</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="app"></div>
+  <div id="toast-root" aria-live="polite"></div>
+
+  <article id="site-info" class="site-info">
+    <h1>アトリエ かわぐっち — スムージー栄養計算アプリ</h1>
+    <p>アトリエ かわぐっちは、スムージー用の原料を最大10種類入力すると、その一杯の栄養価が分かるウェブアプリです。五大栄養素を五角形のレーダーチャートで、各大栄養素から取り上げた代表6栄養素を六角形チャートで表示します。イメージキャラクターはかわぐっちです。</p>
+    <h2>できること</h2>
+    <ul>
+      <li>フルーツ・野菜・ミルク・プラス食材、こんにゃく5種、その他（成分表データ）から原料を選ぶ</li>
+      <li>リストにない原料はその他に名前を入れて、成分表の栄養値で個人プロフィールに保存する</li>
+      <li>投入量はグラムで数字入力する</li>
+      <li>スムージーに名前をつけてブラウザへ最大100杯まで保存・削除する</li>
+      <li>LINE、メール、Instagram、X、Facebookでレシピを共有する</li>
+      <li>ユーザープロファイル（名前・好きなスムージー）を登録する</li>
+    </ul>
+    <h2>五大栄養素と代表6栄養素</h2>
+    <ul>
+      <li>炭水化物：糖質、食物繊維、果糖、ブドウ糖、でんぷん、オリゴ糖</li>
+      <li>たんぱく質：ロイシン、リジン、バリン、イソロイシン、グルタミン、アルギニン</li>
+      <li>脂質：飽和、一価不飽和、多価不飽和、オメガ3、オメガ6、コレステロール</li>
+      <li>ビタミン：ビタミンA、ビタミンC、ビタミンE、ビタミンB1、ビタミンB6、葉酸</li>
+      <li>ミネラル：カルシウム、鉄、カリウム、マグネシウム、亜鉛、ナトリウム</li>
+    </ul>
+    <h2>原料リスト</h2>
+    <h3>フルーツ</h3>
+    <p>バナナ、いちご、ブルーベリー、マンゴー、キウイ、りんご、パイナップル、オレンジ、アボカド、もも、ぶどう、デーツ（乾燥）、レーズン、パパイヤ</p>
+    <h3>ベジタブル</h3>
+    <p>ほうれん草、ケール、にんじん、きゅうり、ビーツ、小松菜、トマト、ブロッコリー、かぼちゃ、さつまいも、パセリ、ミント、板こんにゃく（黒）、板こんにゃく（白）、生芋こんにゃく、しらたき、赤こんにゃく</p>
+    <h3>ベース</h3>
+    <p>牛乳、無調整豆乳、アーモンドミルク、プレーンヨーグルト、ギリシャヨーグルト、ココナッツウォーター、絹ごし豆腐、ココナッツミルク、スキムミルク（粉末）</p>
+    <h3>プラス</h3>
+    <p>はちみつ、チアシード、オートミール、ピーナッツバター、抹茶、レモン汁、しょうが、ホエイプロテイン、きなこ、くるみ、アーモンド、ココアパウダー、メープルシロップ、亜麻仁（いり）、いりごま（白）、ライム汁</p>
+    <h3>その他</h3>
+    <p>水、氷。リストにない原料は成分表と照合してプロフィールに保存できます。</p>
+    <h2>よくある質問</h2>
+    <h3>栄養値は正確ですか？</h3>
+    <p>日本食品標準成分表などを参考にした目安です。アミノ酸の一部は推定値です。診断・治療・栄養指導の代替にはなりません。</p>
+    <h3>板こんにゃくの量は？</h3>
+    <p>こんにゃく類（板黒・板白・生芋・しらたき・赤）の初期値は40gです。いずれもグラムで変更できます。</p>
+    <h3>JavaScriptは必要ですか？</h3>
+    <p>チャートの操作と保存にはJavaScriptが必要です。この説明文はスクリプトなしでも読めます。</p>
+  </article>
+
+  <noscript>
+    <p class="empty-note" style="text-align:center;padding:24px">チャートを使うにはJavaScriptを有効にしてください。原料と計算の説明は上の本文にあります。</p>
+  </noscript>
+
+  <script src="data.js?v=10" defer></script>
+  <script src="app.js?v=10" defer></script>
+</body>
+</html>
